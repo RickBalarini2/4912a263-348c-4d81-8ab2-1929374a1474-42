@@ -1,6 +1,7 @@
 import { useState } from "react";
 import { Button } from "@/components/ui/button";
-import { Menu, X } from "lucide-react";
+import { Menu, X, Settings } from "lucide-react";
+import { Link } from "react-router-dom";
 import logoImage from "@/assets/logo-benites-bulls.png";
 
 const Navigation = () => {
@@ -43,7 +44,13 @@ const Navigation = () => {
           </div>
 
           {/* CTA Button */}
-          <div className="hidden md:block">
+          <div className="hidden md:flex items-center space-x-3">
+            <Link to="/admin">
+              <Button variant="outline" size="sm" className="gap-2">
+                <Settings className="h-4 w-4" />
+                Admin
+              </Button>
+            </Link>
             <Button variant="default" className="bg-gradient-gold hover:shadow-gold transition-all duration-300">
               Entre em Contato
             </Button>
@@ -75,7 +82,13 @@ const Navigation = () => {
                   {item.name}
                 </a>
               ))}
-              <Button variant="default" className="bg-gradient-gold mt-4 w-full">
+              <Link to="/admin" className="w-full" onClick={() => setIsOpen(false)}>
+                <Button variant="outline" className="gap-2 w-full mb-2">
+                  <Settings className="h-4 w-4" />
+                  Admin
+                </Button>
+              </Link>
+              <Button variant="default" className="bg-gradient-gold w-full">
                 Entre em Contato
               </Button>
             </div>
