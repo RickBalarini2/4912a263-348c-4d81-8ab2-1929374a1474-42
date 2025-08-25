@@ -1,6 +1,6 @@
 import { Button } from "@/components/ui/button";
 import { ArrowDown, Heart, Award, Users } from "lucide-react";
-import heroImage from "@/assets/hero-kennel.jpg";
+import heroImage from "@/assets/hero-kennel.png";
 import logoImage from "@/assets/logo-benites-bulls.png";
 
 const Hero = () => {
