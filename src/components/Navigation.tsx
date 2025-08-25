@@ -45,10 +45,10 @@ const Navigation = () => {
 
           {/* CTA Button */}
           <div className="hidden md:flex items-center space-x-3">
-            <Link to="/auth">
+            <Link to="/admin">
               <Button variant="outline" size="sm" className="gap-2">
                 <Settings className="h-4 w-4" />
-                Login
+                Admin
               </Button>
             </Link>
             <Button variant="default" className="bg-gradient-gold hover:shadow-gold transition-all duration-300">
@@ -82,10 +82,10 @@ const Navigation = () => {
                   {item.name}
                 </a>
               ))}
-              <Link to="/auth" className="w-full" onClick={() => setIsOpen(false)}>
+              <Link to="/admin" className="w-full" onClick={() => setIsOpen(false)}>
                 <Button variant="outline" className="gap-2 w-full mb-2">
                   <Settings className="h-4 w-4" />
-                  Login
+                  Admin
                 </Button>
               </Link>
               <Button variant="default" className="bg-gradient-gold w-full">
