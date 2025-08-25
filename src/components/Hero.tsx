@@ -80,7 +80,7 @@ const Hero = () => {
           <Button 
             size="lg" 
             variant="outline" 
-            className="border-white/30 text-white hover:bg-white/10 px-8 py-3 transition-all duration-300"
+          className="bg-gradient-gold hover:shadow-gold text-primary font-semibold px-8 py-3 transition-all duration-300 hover:scale-105"
           >
             Conhecer o Canil
           </Button>
